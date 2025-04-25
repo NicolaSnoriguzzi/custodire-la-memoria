@@ -14,8 +14,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="contesto.html">Contesto</a></li>
-        <li><a href="tragedia.html">Tragedia</a></li>
-        <li><a href="conseguenze.html">Conseguenze</a></li>
+        <li><a href="tragedia.html">Tragedia e Conseguenze</a></li>
         <li><a href="memoria.html">Memoria</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="contatti.html" class="active">Contatti</a></li>
@@ -29,7 +28,7 @@
           Per informazioni, richieste o segnalazioni, puoi scriverci via email o
           seguirci sui social.
         </p>
-        <ul>
+        <!-- <ul>
           <li>
             <strong>Email:</strong>
             <a href="mailto:memoria@girolimetto.it">memoria@girolimetto.it</a>
@@ -42,24 +41,49 @@
               >/girolimetto.memoria</a
             >
           </li>
-        </ul>
+        </ul> -->
+        <p class="callout">
+          <em>Stiamo apportando delle modifiche al nostro sito, a breve saranno
+            visibili i riferimenti di contatto. Ti invitiamo a tornare più tardi
+            per ulteriori aggiornamenti.</em
+          >
+        </p>
       </section>
-
-      <section>
+      <section class="newsletter-section">
         <h2>Iscriviti alla Newsletter</h2>
         <p>
           Ricevi aggiornamenti sugli eventi, le pubblicazioni e le iniziative
           legate al progetto “Custodire la Memoria”.
         </p>
-        <form name="newsletter" method="POST" data-netlify="true">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
-        
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        
-          <button type="submit">Iscriviti</button>
-        </form>        
+
+        <form
+          name="newsletter"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="newsletter-form"
+        >
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p hidden>
+            <label
+              >Non compilare questo campo: <input name="bot-field"
+            /></label>
+          </p>
+
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-actions">
+            <button type="submit">Iscriviti</button>
+          </div>
+        </form>
       </section>
     </main>
 

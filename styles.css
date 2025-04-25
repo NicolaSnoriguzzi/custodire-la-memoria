@@ -83,6 +83,25 @@ nav ul li a.active {
     font-weight: 700; /* Più in grassetto dell'elemento normale */
     position: relative; /* Per posizionare eventuali elementi aggiuntivi */
 }
+/* Stile per class callout */
+/*
+
+        style="
+          background-color: #fff3cd;
+          padding: 15px;
+          border-left: 6px solid #ffcc00;
+          margin-bottom: 30px;
+        "
+*/
+.callout {
+    background-color: #fff3cd; /* Colore di sfondo giallo chiaro */
+    padding: 15px;
+    border-left: 6px solid #ffcc00; /* Bordo sinistro giallo scuro */
+    margin-bottom: 30px; /* Spazio sotto il callout */
+    font-size: 1.1em; /* Dimensione del font leggermente aumentata */
+    color: #856404; /* Colore del testo marrone scuro */
+    border-radius: 8px; /* Bordi arrotondati per il callout */
+}
 
 /* Effetto hover sull'elemento attivo rimane lo stesso */
 nav ul li a.active:hover {
@@ -115,6 +134,54 @@ blockquote {
     font-style: italic; /* Citazioni in corsivo */
     color: #444; /* Testo delle citazioni leggermente più scuro */
 }
+
+/* Sezione newsletter */
+.newsletter-form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.form-actions button {
+    background-color: #b84519;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions button:hover {
+    background-color: #7a300d;
+}
+
 
  /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
